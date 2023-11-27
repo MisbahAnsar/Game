@@ -26,13 +26,13 @@ img{
 }
 button{
     position: absolute;
-    padding: 20px;
+    padding: 40px;
     background-color: lightpink;
     border-radius: 14px;
-    top: 250px;
+    top: 400px;
     right: 46%;
     width: 130px;
-    font-size: larger;
+    font-size: 20px;
     position: fixed;
     transition: 0.2s;
 }
