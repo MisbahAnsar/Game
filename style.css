@@ -1,0 +1,43 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    
+}
+div{
+    
+    font-style: normal;
+    color: #7E22CE;
+    text-align: center;
+    background-color: wheat;
+    margin: 0;
+    padding: 7px 0;
+    list-style: none;
+    
+}
+img{
+    height: 100%;
+    width: 100%;
+    visibility: 70%;
+    position: relative;
+    position: fixed;
+}
+button{
+    position: absolute;
+    padding: 20px;
+    background-color: lightpink;
+    border-radius: 14px;
+    top: 250px;
+    right: 46%;
+    width: 130px;
+    font-size: larger;
+    position: fixed;
+    transition: 0.2s;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transition: 1s;
+}

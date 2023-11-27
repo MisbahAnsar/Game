@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEHUB</title>
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="background: linear-gradient(lightblue, white, pink); ">
+
+
+    <h1>Choose Snake, Water or Gun</h1>
+
+    <h3>Instructions</h3>
+    <ul>
+      <li>---------- Snake, Water, Gun Game ----------</li>
+      <li>'s' for Snake</li> <li>'w' for Water</li> <li>'g' for Gun</li> 
+    </ul>
+
+    <img style="height: 70%;
+    width: 100%;
+    visibility: 70%;
+    position: fixed;
+    " src="https://clipground.com/images/game-background-png-images-7.png" alt="Size">
+
+    
+
+
+
+
+
+
+
+    <script>console.log('---------- Snake, Water, Gun Game ----------');
+        console.log("'s' for Snake\n'w' for Water\n'g' for Gun\nYou have 8 chances\n");
+        function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+    let generated_option = getRandomInt(0, 2)
+    // 0 : Snake
+    // 1 : Water
+    // 2 : Gun
+
+    const game = ((val1, val2) => {
+        if (val1 == 'S' && val2 == 0) {
+            alert("Computer Chose SNAKE!")
+            alert("Its a DRAW!")
+        }
+        else if (val1 == 'S' && val2 == 1) {
+            alert("Computer Chose Water!")
+            alert("YOU WIN!")
+        }
+        else if (val1 == 'S' && val2 == 2) {
+            alert("Computer Chose GUN!")
+            alert("YOU LOSE!")
+        }
+
+
+        else if (val1 == 'W' && val2 == 0) {
+            alert("Computer Chose SNAKE!")
+            alert("YOU LOSE!")
+        }
+        else if (val1 == 'W' && val2 == 1){
+            alert("Computer Chose WATER!")
+            alert("Its a DRAW!")
+        }
+        else if (val1 == 'W' && val2 == 2) {
+            alert("Computer Chose GUN!")
+            alert("YOU WIN!")
+        }
+
+
+        else if (val1 == 'G' && val2 == 0) {
+            alert("Computer Chose SNAKE!")
+            alert("YOU WIN!")
+        }
+        else if (val1 == 'G' && val2 == 1) {
+            alert("Computer Chose WATER!")
+            alert("YOU LOSE!")
+        }
+        else if (val1 == 'G' && val2 == 2){
+            alert("Computer Chose GUN!")
+            alert("Its a DRAW!")
+        }
+        else{
+            alert("Please Enter a Valid Option!")
+        }
+    })
+
+    let user_input = prompt("Choose an Option: \n S : Snake \n W : Water \n G : Gun")
+    game(user_input,generated_option)
+        
+       
+      </script>
+      <nav>
+        <button style="
+        padding: 20px;
+        background-color: lightblue;
+        border-radius: 14px;
+        top: 250px;
+        right: 46%;
+        width: 130px;
+        font-size: larger;
+        position: fixed;
+        text-decoration: none;"><a style="text-decoration: none;" href="#" onclick="myFunction()" class="currentpage">Try Again</a>
+        <script>
+          function myFunction(){
+            window.location.reload();
+          }
+        </script></button>
+      </nav>
+</body>
+</html>
